@@ -10,140 +10,26 @@
 </head>
 <body>
 
-  <header class="main_header">
-    <div class="main_header_block container">
-      <div class="header_block_left">
-        <a href="./index.html"><img src="https://eats.yandex.com/uz/tashkent?shippingType=delivery" alt="LOGO"></a>
-        <form class="form">
-          <input type="text" class="header_input" placeholder="Restoran, taom yoki mahsulot nomini topish">
-          <button class="header_btn" type="submit">Topish</button>
-        </form>
-        <input class="header_input_2" type="text" placeholder="Yetkazish manzilini kiriting:">
-      </div>
-      <div class="header_block_right">
-        <img src="./image/" alt="icon_globus">
-        <button class="Login_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Kirish</button>
-      </div>
+  <div class="form">
+    <div class="title">Welcome</div>
+    <div class="subtitle">Let's create your account!</div>
+    <div class="input-container ic1">
+      <input id="firstname" class="input" type="text" placeholder=" " required />
+      <div class="cut"></div>
+      <label for="firstname" class="placeholder">First name</label>
     </div>
-  </header>
-
-  <main>
-    <section class="shops">
-      <div class="shops_tite container">
-        <h1 class="title_shop">Do'konlar</h1>
-        <button class="shop_btn">Hammasi</button>
-      </div>
-      <div class="swiper container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="banner" src="https://eda.yandex/images/3512826/e02392a5f97684e63750efce7bbe7220.png" alt="banner">
-          </div>
-          <div class="swiper-slide">
-            <img class="banner" src="https://eda.yandex/images/1327512/d5de54974a81bc05b8a1b2165482e10e.png" alt="banner">
-          </div>
-          <div class="swiper-slide">
-            <img class="banner" src="https://eda.yandex/images/3507787/dd4028da401588419c805850557bb267.png" alt="banner">
-          </div>
-          <div class="swiper-slide">
-            <img class="banner" src="https://eda.yandex/images/3735503/c852dc04e2ec830b044634b11ed9cd88.png" alt="banner">
-          </div>
-        </div>
-
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
-
-    <section class="delivery">
-      <div class="delivery_block container">
-        <ul class="delivery_block_list">
-          <li class="block_link_item"><a class="block_link_link active_link" href="#">Hammasi</a></li>
-          <li class="block_link_item"><a class="block_link_link" href="#">Olib ketish</a></li>
-          <li class="block_link_item"><a class="block_link_link" href="#">Burgerlar</a></li>
-          <li class="block_link_item"><a class="block_link_link" href="#">Sushi</a></li>
-          <li class="block_link_item"><a class="block_link_link" href="#">Pitsa</a></li>
-          <li class="block_link_item"><a class="block_link_link" href="#">Vok</a></li>
-          <li class="block_link_item"><a class="block_link_link" href="#">Pasta</a></li>
-          <li class="block_link_item"><a class="block_link_link" href="#">Nonushta</a></li>
-          <li class="block_link_item"><a class="block_link_link" href="#">Tushlik</a></li>
-          <li class="block_link_item"><a class="block_link_link" href="#">Yana ></a></li>
-        </ul>
-
-        <div class="delivery_block_list">
-          <p class="delivery_text">Yetkazish: Hozir</p>
-          <p class="delivery_text">Saralash</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="sales">
-      <div class="sales_block container">
-        <div id="sales-block-content" class="sales_block_content">
-          <ul class="item_block"></ul>
-        </div>
-      </div>
-    </section>
-
-    <div class="form">
-      <div class="title">Welcome</div>
-      <div class="subtitle">Let's create your account!</div>
-      <div class="input-container ic1">
-        <input id="firstname" class="input" type="text" placeholder=" " />
-        <div class="cut"></div>
-        <label for="firstname" class="placeholder">First name</label>
-      </div>
-      <div class="input-container ic2">
-        <input id="lastname" class="input" type="text" placeholder=" " />
-        <div class="cut"></div>
-        <label for="lastname" class="placeholder">Last name</label>
-      </div>
-      <div class="input-container ic2">
-        <input id="email" class="input" type="text" placeholder=" " />
-        <div class="cut cut-short"></div>
-        <label for="email" class="placeholder">Email</label>
-      </div>
-      <button type="text" class="submit">submit</button>
+    <div class="input-container ic2">
+      <input id="lastname" class="input" type="text" placeholder=" " />
+      <div class="cut"></div>
+      <label for="lastname" class="placeholder">Last name</label>
     </div>
-
-    <!-- Template for Product Cards -->
-    <template id="product-template">
-      <div class="card">
-        <img class="card-img-top" src="" alt="Product Image">
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="rating"></p>
-          <p class="card-price"></p>
-        </div>
-      </div>
-    </template>
-
-  </main>
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="my-3 p-3">
-            <input placeholder="Username" type="text" name="" class="form-control mt-2" id="username" />
-            <input placeholder="Password" type="password" name="" class="form-control mt-2" id="password" />
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button id="sign-btn" type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="text" placeholder=" " />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">Email</label>
     </div>
+    <button type="text" class="submit">submit</button>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-  <script src="./main.js"></script>
+  <script src="./admin.js"></script>
 </body>
 </html>

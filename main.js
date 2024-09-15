@@ -95,18 +95,3 @@ elWrapper.addEventListener("click", (evt) => {
     window.location.replace(`../single-product.html?id=${id}`);
   }
 });
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 500) {
-    elToTop.style.display = "inline-block";
-  } else {
-    elToTop.style.display = "none";
-  }
-});
-
-elToTop.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
