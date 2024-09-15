@@ -75,7 +75,7 @@ body {
   border-radius: 15px;
 }
 
-.Login_btn {
+.header__p {
   padding: 13px 26px;
   background-color: #5c5a571a;
   border: none;
@@ -89,7 +89,6 @@ body {
   background-color: #e0e0e0;
 }
 
-/* Swiper Styles */
 .swiper-wrapper {
   display: flex;
   justify-content: space-between;
@@ -215,9 +214,9 @@ body {
 }
 
 /* Form Styles */
-body {
+.form_content {
   align-items: center;
-  background-color: #000;
+
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -230,6 +229,15 @@ body {
   height: 500px;
   padding: 20px;
   width: 320px;
+}
+.log_out_btn{
+  padding: 10px 20px;
+  background-color: #a8a8a8;
+border-radius:15px;
+position: absolute;
+top: 10px;
+right: 50px;
+
 }
 
 .title {

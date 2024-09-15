@@ -7,7 +7,7 @@ const template = getElement("template");
 const elWrapper = getElement(".item_block");
 
 if (!token) {
-  window.location.replace("../index.html");
+  window.location.replace("./index.html");
 }
 
 fetch("https://fakestoreapi.com/auth/login", {
@@ -37,9 +37,9 @@ document.body.appendChild(usersListContainer);
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
 
-  const firstName = firstNameInput.value.trim();
-  const lastName = lastNameInput.value.trim();
-  const email = emailInput.value.trim();
+  const firstName = firstNameInput.value;
+  const lastName = lastNameInput.value;
+  const email = emailInput.value;
 
   if (firstName === "" || lastName === "" || email === "") {
     alert("Please fill out all fields");
@@ -63,7 +63,7 @@ submitButton.addEventListener("click", (event) => {
 function displayUsers(users) {
   usersListContainer.innerHTML = "";
   users.map((user, index) => {
-    const userDiv = document.createElement("div");
+    const userDiv = document.createElement("users_block");
     userDiv.innerHTML = `
       <p><strong>User ${index + 1}:</strong></p>
       <p>First Name: ${user.firstName}</p>
